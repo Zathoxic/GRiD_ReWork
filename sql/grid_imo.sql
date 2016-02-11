@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: localhost
--- Genereertijd: 11 feb 2016 om 14:19
+-- Genereertijd: 11 feb 2016 om 14:27
 -- Serverversie: 5.5.20
 -- PHP-Versie: 5.3.9
 
@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 -- Tabelstructuur voor tabel `news`
 --
 
+DROP TABLE IF EXISTS `news`;
 CREATE TABLE IF NOT EXISTS `news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(200) NOT NULL,
