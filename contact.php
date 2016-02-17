@@ -20,70 +20,55 @@ include_once( "inc/class.TemplatePower.inc.php" );
     ?>
         <div class="container">
             <div class="contact">
-                <div class="row">
-                    <div class="main-contact">
-                        <div class="well well-sm">
-                            <form class="form-horizontal" method="post">
-                                <fieldset>
-                                    <legend class="text-center header">Contact us</legend>
-
-                                    <div class="form-group">
-                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                        <div class="col-md-8">
-                                            <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                        <div class="col-md-8">
-                                            <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                        <div class="col-md-8">
-                                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                        <div class="col-md-8">
-                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                                        <div class="col-md-8">
-                                            <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-md-12 text-center">
-                                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                        </div>
-                                    </div>
-
-                                </fieldset>
-                            </form>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>
+                            <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
                         </div>
-
+                        <form role="form" action="" method="post">
+                            <div class="col-lg-6">
+                                <div class="well well-sm"><strong><i style="text-align:left;" class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
+                                <div class="form-group">
+                                    <label for="InputName">Your Name</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputEmail">Your Email</label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputMessage">Message</label>
+                                    <div class="input-group">
+                                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                                </div>
+                                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                            </div>
+                        </form>
+                        <hr class="featurette-divider hidden-lg">
+                        <div class="col-lg-5 col-md-push-1">
+                            <address>
+    <h3>Office Location</h3>
+    <p class="lead"><a href="https://www.google.com/maps/place/Burgemeester+van+der+Schansstraat,+4281+Andel,+Nederland/@51.7829037,5.056766,17z/data=!3m1!4b1!4m2!3m1!1s0x47c68e617336cb07:0xc43f5f209c810763">GRiD-imo<br>
+Andel, Burgemeester van der Schansstraat 36</a><br>
+      Phone: +31 6 53 25 11 10<br>
+    </p>
+    </address>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="contact-side">
-                <p>Maarten</p>
-                <p>Klein Haneveld</p>
-                <br>
-                <br>
-                <br>
-                <p>Tel.: 06 53251110</p>
-                <p>E-Mail: maartenkh@gmail.com</p>
-                <br>
 
+                </div>
             </div>
         </div>
 
