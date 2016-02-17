@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("inc/header.php");
 include_once( "inc/class.TemplatePower.inc.php" );
 

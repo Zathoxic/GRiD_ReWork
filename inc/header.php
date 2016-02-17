@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+
   </head>
   <body>
 
@@ -24,6 +24,18 @@
             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Link</a></li>
           </ul>
+          <?php
+                    if(!empty( $_SESSION["username"])){
+
+
+                    echo "<ul class='nav navbar-nav'>
+                      <li><a href='#''>Add news<span class='sr-only'>(current)</span></a></li>
+                     <li><a href='#''>Add project</a></li>
+
+                    </ul>";
+                       echo "<p style='float:right; margin:0;'>ingelogd als: ".$_SESSION['username']."</p> <br><a style='float:right' href='logout.php'>logout</a>";
+         }
+                    ?>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
 
