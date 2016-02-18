@@ -78,19 +78,6 @@ Andel, Burgemeester van der Schansstraat 36</a><br>
             </div>
         </div>
 
-        <style>
-            .header {
-                color: #36A0FF;
-                font-size: 18px;
-                padding: 10px;
-            }
-            
-            .bigicon {
-                font-size: 25px;
-                color: #36A0FF;
-            }
-        </style>
-
 
 
 
@@ -252,7 +239,7 @@ mail($email_to, $email_subject, $email_message, $headers);
 
 
 
-    <?php echo "<div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>" ?>
+    <?php echo "<div class='alert alert-success'><strong><span class='glyphicon glyphicon-send'></span> Success! Message sent. (If form ok!)</strong></div>" ?>
 
 
         <?php

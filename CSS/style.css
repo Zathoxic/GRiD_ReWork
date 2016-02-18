@@ -1,5 +1,7 @@
 body {
     background-color: #1a8cff !important;
+    font: inherit;
+    font-size: 14px;
 }
 
 .col-sm-4,
@@ -35,4 +37,15 @@ address {
     border-radius: 5px;
     border: 1px solid white;
     padding: 15px;
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 25px;
+    color: #36A0FF;
 }
