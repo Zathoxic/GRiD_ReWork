@@ -23,34 +23,40 @@ include_once( "inc/class.TemplatePower.inc.php" );
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>
-                            <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+
+                            <!--   <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div> -->
                         </div>
                         <form role="form" action="" method="post">
                             <div class="col-lg-6">
                                 <div class="well well-sm"><strong><i style="text-align:left;" class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
                                 <div class="form-group">
-                                    <label for="InputName">Your Name</label>
+                                    <label for="InputName">Your FirstName</label>
                                     <div class="input-group">
-                                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Enter FirstName" required>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputName">Your LastName</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Enter LastName" required>
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="InputEmail">Your Email</label>
                                     <div class="input-group">
-                                        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputEmail">Your Phone Number</label>
+                                    <div class="input-group">
+                                        <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Enter Phone number" required>
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="InputMessage">Message</label>
                                     <div class="input-group">
                                         <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" name="InputReal" id="InputReal" required>
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
                                 </div>
                                 <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
@@ -101,3 +107,156 @@ Andel, Burgemeester van der Schansstraat 36</a><br>
 </body>
 
 </html>
+<?php
+ 
+if(isset($_POST['email'])) {
+ 
+     
+ 
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+ 
+    $email_to = "sakulkh@gmail.com";
+ 
+    $email_subject = "Contact form from GRiD-IMO.nl";
+ 
+     
+ 
+     
+ 
+    function died($error) {
+ 
+        // your error code can go here
+ 
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+ 
+        echo "These errors appear below.<br /><br />";
+ 
+        echo $error."<br /><br />";
+ 
+        echo "Please go back and fix these errors.<br /><br />";
+ 
+        die();
+ 
+    }
+ 
+     
+ 
+    // validation expected data exists
+ 
+    if(!isset($_POST['first_name']) ||
+ 
+        !isset($_POST['last_name']) ||
+ 
+        !isset($_POST['email']) ||
+       !isset($_POST['telephone']) ||
+ 
+        !isset($_POST['InputMessage'])) {
+ 
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+ 
+    }
+ 
+     
+ 
+    $first_name = $_POST['first_name']; // required
+ 
+    $last_name = $_POST['last_name']; // required
+ 
+    $email_from = $_POST['email']; // required
+ 
+    $telephone = $_POST['telephone']; // not required
+ 
+    $comments = $_POST['InputMessage']; // required
+ 
+     
+ 
+    $error_message = "";
+ 
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+ 
+  if(!preg_match($email_exp,$email_from)) {
+ 
+    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$first_name)) {
+ 
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+  if(!preg_match($string_exp,$last_name)) {
+ 
+    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+ 
+  }
+ 
+  if(strlen($comments) < 2) {
+ 
+    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+ 
+  }
+ 
+  if(strlen($error_message) > 0) {
+ 
+    died($error_message);
+ 
+  }
+ 
+    $email_message = "Form details below.\n\n";
+ 
+     
+ 
+    function clean_string($string) {
+ 
+      $bad = array("content-type","bcc:","to:","cc:","href");
+ 
+      return str_replace($bad,"",$string);
+ 
+    }
+ 
+     
+ 
+    $email_message .= "First Name: ".clean_string($first_name)."\n";
+ 
+    $email_message .= "Last Name: ".clean_string($last_name)."\n";
+ 
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+ 
+    $email_message .= "Telephone: ".clean_string($telephone)."\n";
+ 
+    $email_message .= "Comments: ".clean_string($comments)."\n";
+ 
+     
+ 
+     
+ 
+// create email headers
+ 
+$headers = 'From: '.$email_from."\r\n".
+ 
+'Reply-To: '.$email_from."\r\n" .
+ 
+'X-Mailer: PHP/' . phpversion();
+ 
+mail($email_to, $email_subject, $email_message, $headers);  
+ 
+
+
+
+?>
+    <!-- include your own success html here -->
+
+
+
+    <?php echo "<div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>" ?>
+
+
+        <?php
+ 
+}
+ 
+?>

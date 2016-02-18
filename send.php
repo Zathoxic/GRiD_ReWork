@@ -39,10 +39,9 @@ if(isset($_POST['email'])) {
         !isset($_POST['last_name']) ||
  
         !isset($_POST['email']) ||
+       !isset($_POST['telephone']) ||
  
-        !isset($_POST['telephone']) ||
- 
-        !isset($_POST['comments'])) {
+        !isset($_POST['InputMessage'])) {
  
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
  
@@ -58,7 +57,7 @@ if(isset($_POST['email'])) {
  
     $telephone = $_POST['telephone']; // not required
  
-    $comments = $_POST['comments']; // required
+    $comments = $_POST['InputMessage']; // required
  
      
  
@@ -134,21 +133,20 @@ $headers = 'From: '.$email_from."\r\n".
  
 'X-Mailer: PHP/' . phpversion();
  
-@mail($email_to, $email_subject, $email_message, $headers);  
+mail($email_to, $email_subject, $email_message, $headers);  
  
+
+
+
 ?>
-
-
-
     <!-- include your own success html here -->
 
 
 
-    Thank you for contacting us. We will be in touch with you very soon.
+    <?php echo "Thank you for contacting us. We will be in touch with you very soon." ?>
 
 
-
-    <?php
+        <?php
  
 }
  
