@@ -15,7 +15,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">GRID IMO</a>
+              <a class="navbar-brand" href="index.php">GRID IMO</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,7 +29,7 @@
 
 
                     echo "<ul class='nav navbar-nav'>
-                      <li><a href='#''>Add news<span class='sr-only'>(current)</span></a></li>
+                      <li><a href='./add_news.php''>Add news<span class='sr-only'>(current)</span></a></li>
                      <li><a href='#''>Add project</a></li>
 
                     </ul>";
