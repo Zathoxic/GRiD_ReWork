@@ -25,10 +25,10 @@
                 <ul class="nav navbar-nav">
 
                     <li><a href="../contact.php">Contact</a></li>
-                    <li><a href="../admin.php">Admin</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li><a href="../admin.php">Login</a></li>
+                    <li><a href="#">Projecten</a></li>
+                    <li><a href="#">Diensten</a></li>
+                    <li><a href="#">Aanvragen</a></li>
                 </ul>
                 <?php
                if(!empty( $_SESSION["username"])){
