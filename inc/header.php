@@ -26,9 +26,9 @@
 
                     <li><a href="../contact.php">Contact</a></li>
                     <li><a href="../admin.php">Login</a></li>
-                    <li><a href="#">Projecten</a></li>
-                    <li><a href="#">Diensten</a></li>
-                    <li><a href="#">Aanvragen</a></li>
+                    <li><a href="../Projecten.php">Projecten</a></li>
+                    <li><a href="../Diensten.php">Diensten</a></li>
+                    <li><a href="../Aanvragen.php">Aanvragen</a></li>
                 </ul>
                 <?php
                if(!empty( $_SESSION["username"])){
