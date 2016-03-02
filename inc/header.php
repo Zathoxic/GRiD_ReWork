@@ -17,15 +17,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">GRID IMO</a>
+                <a class="navbar-brand" href="#">GRID IMO</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
 
+                    <li><a href="../index.php">Home</a></li>
                     <li><a href="../contact.php">Contact</a></li>
-                    <li><a href="../admin.php">Login</a></li>
+                    <li><a href="../admin.php">Admin Login</a></li>
                     <li><a href="../Projecten.php">Projecten</a></li>
                     <li><a href="../Diensten.php">Diensten</a></li>
                     <li><a href="../Aanvragen.php">Aanvragen</a></li>
@@ -35,8 +36,8 @@
 
 
                     echo "<ul class='nav navbar-nav'>
-                      <li><a href='./add_news.php''>Add news<span class='sr-only'>(current)</span></a></li>
-                     <li><a href='#''>Add project</a></li>
+                      <li><a href='../add_news.php'' >Add news<span class='sr-only'>(current)</span></a></li>
+                     <li><a href='../add_project.php''>Add project</a></li>
 
                     </ul>";
                        echo "<p style='float:right; margin:0;'>ingelogd als: ".$_SESSION['username']."</p> <br><a style='float:right' href='logout.php'>logout</a>";
