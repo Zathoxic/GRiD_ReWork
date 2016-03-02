@@ -49,3 +49,30 @@ address {
     font-size: 25px;
     color: #36A0FF;
 }
+
+div.projects {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+table tr td th {
+    text-align: center;
+    border: 1px solid grey;
+}
+
+table tr td {
+    text-align: left;
+    border-top: 1px solid grey;
+}
+
+.panel panel-default {
+    margin-top: 25%;
+}
+
+.TableContent {
+    margin-top: 1%;
+}
+
+span.right {
+    float: right;
+}
