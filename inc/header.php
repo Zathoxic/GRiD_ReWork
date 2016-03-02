@@ -4,6 +4,21 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#news_object').slimScroll({
+                height: '250px'
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -27,9 +42,9 @@
                     <li><a href="../index.php">Home</a></li>
                     <li><a href="../contact.php">Contact</a></li>
                     <li><a href="../admin.php">Admin Login</a></li>
-                    <li><a href="../Projecten.php">Projecten</a></li>
-                    <li><a href="../Diensten.php">Diensten</a></li>
-                    <li><a href="../Aanvragen.php">Aanvragen</a></li>
+                    <li><a href="../projecten.php">Projecten</a></li>
+                    <li><a href="../diensten.php">Diensten</a></li>
+                    <li><a href="../aanvragen.php">Aanvragen</a></li>
                 </ul>
                 <?php
                if(!empty( $_SESSION["username"])){

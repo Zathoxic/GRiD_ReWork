@@ -143,7 +143,6 @@ mail($email_to, $email_subject, $email_message, $headers);
 
 
 
-        <!-- include your own success html here -->
 
 
 
