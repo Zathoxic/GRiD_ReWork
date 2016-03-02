@@ -50,6 +50,21 @@ address {
     color: #36A0FF;
 }
 
+<<<<<<< HEAD
+.red{
+    color:red;
+}
+.form-area
+{
+    background-color: #FAFAFA;
+    padding: 10px 40px 60px;
+    margin: 10px 0px 60px;
+    border: 1px solid GREY;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+=======
 div.projects {
     margin-left: 5%;
     margin-right: 5%;
@@ -75,4 +90,5 @@ table tr td {
 
 span.right {
     float: right;
+>>>>>>> c125ddfc9a50a656c9a5fab036ff6427ce6ad05e
 }
