@@ -26,7 +26,6 @@
 
                     <li><a href="../index.php">Home</a></li>
                     <li><a href="../contact.php">Contact</a></li>
-                    <li><a href="../admin.php">Admin Login</a></li>
                     <li><a href="../Projecten.php">Projecten</a></li>
                     <li><a href="../Diensten.php">Diensten</a></li>
                     <li><a href="../Aanvragen.php">Aanvragen</a></li>
