@@ -28,30 +28,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
+
+    <div class="container">
+        <div>
+            <div class="form-area">
+                <form role="form" method="post">
+                    <br style="clear:both">
+                    <h3 style="margin-bottom: 25px; text-align: center;">Voeg nieuws toe</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="title" name="title" placeholder="title" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" type="textarea" name="text" id="text" placeholder="text" maxlength="140" rows="9"></textarea>
+
+                    </div>
+
+                    <button type="submit" value="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
-=======
- <div class="container">
-     <div>
-         <div class="form-area">
-             <form role="form" method="post">
-                 <br style="clear:both">
-                 <h3 style="margin-bottom: 25px; text-align: center;">Voeg nieuws toe</h3>
-                 <div class="form-group">
-                     <input type="text" class="form-control" id="title" name="title" placeholder="title" required>
-                 </div>
-                 <div class="form-group">
-                     <textarea class="form-control" type="textarea"name="text" id="text" placeholder="text" maxlength="140" rows="9"></textarea>
-
-                 </div>
-
-                 <button type="submit" value="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
-             </form>
-         </div>
-     </div>
- </div>
-  </body>
-</html>
->>>>>>> 79bee2a33796d0b308ce80750724d03372087781

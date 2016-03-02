@@ -1,22 +1,4 @@
-
-<<<<<<< HEAD
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-=======
->>>>>>> 79bee2a33796d0b308ce80750724d03372087781
-    <?php
+<?php
 include("inc/header.php");
 include_once( "inc/class.TemplatePower.inc.php" );
     $tpl = new TemplatePower( "tpl/contact.tpl" );
@@ -160,15 +142,15 @@ mail($email_to, $email_subject, $email_message, $headers);
 
 
 
-?>
-    <!-- include your own success html here -->
+
+        <!-- include your own success html here -->
 
 
 
-    <?php echo "<div class='alert alert-success'><strong><span class='glyphicon glyphicon-send'></span> Success! Message sent. (If form ok!)</strong></div>" ?>
+       echo "<div class='alert alert-success'><strong><span class='glyphicon glyphicon-send'></span> Success! Message sent. (If form ok!)</strong></div>"
 
 
-        <?php
+
  
 }
  
