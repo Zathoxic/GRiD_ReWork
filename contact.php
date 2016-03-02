@@ -10,7 +10,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "sakulkh@gmail.com";
+    $email_to = "dennishoornaar@live.nl";
  
     $email_subject = "Contact form from GRiD-IMO.nl";
  
@@ -138,19 +138,12 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
  
 mail($email_to, $email_subject, $email_message, $headers);  
- 
 
 
 
-
-
-
-
-       echo "<div class='alert alert-success'><strong><span class='glyphicon glyphicon-send'></span> Success! Message sent. (If form ok!)</strong></div>"
+       echo "<div class='alert alert-success'><strong><span class='glyphicon glyphicon-send'></span> Success! Message sent. (If form ok!)</strong></div>";
 
 
 
  
 }
- 
-?>
