@@ -10,35 +10,57 @@
       <schema id="1" name="grid_imo"/>
       <table id="2" parent="1" name="login"/>
       <table id="3" parent="1" name="news"/>
-      <column id="4" parent="2" name="id">
+      <table id="4" parent="1" name="projects"/>
+      <column id="5" parent="2" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="5" parent="2" name="username">
+      <column id="6" parent="2" name="username">
         <mandatory>1</mandatory>
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="6" parent="2" name="password">
+      <column id="7" parent="2" name="password">
         <mandatory>1</mandatory>
         <data-type>varchar(200)</data-type>
       </column>
-      <key id="7" parent="2" name="PRIMARY">
+      <key id="8" parent="2" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="8" parent="3" name="id">
+      <column id="9" parent="3" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="9" parent="3" name="title">
+      <column id="10" parent="3" name="title">
         <mandatory>1</mandatory>
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="10" parent="3" name="text">
+      <column id="11" parent="3" name="text">
         <mandatory>1</mandatory>
         <data-type>varchar(5000)</data-type>
       </column>
-      <key id="11" parent="3" name="PRIMARY">
+      <key id="12" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="13" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="14" parent="4" name="title">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="15" parent="4" name="content">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="16" parent="4" name="enabled">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <key id="17" parent="4" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>

@@ -1,4 +1,5 @@
 <?php
+session_start();
     require 'inc/header.php';
 ?>
 
@@ -11,44 +12,44 @@
 
     <body>
         <div class="container">
-            <div class="Left2">
+            <div class="col col-md-3">
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                        <h3 class="panel-title">Dienst 1</h3>
                     </div>
                     <div class="panel-body">
                         Panel content
                     </div>
                 </div>
             </div>
-            <div class="Left1">
+            <div class="col col-md-3">
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                        <h3 class="panel-title">Diesnt 2</h3>
                     </div>
                     <div class="panel-body">
                         Panel content
                     </div>
                 </div>
             </div>
-            <div class="Right1">
+            <div class="col col-md-3">
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                        <h3 class="panel-title">Dienst 3</h3>
                     </div>
                     <div class="panel-body">
                         Panel content
                     </div>
                 </div>
             </div>
-            <div class="Right2">
+            <div class="col col-md-3">
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                        <h3 class="panel-title">Dienst 4</h3>
                     </div>
                     <div class="panel-body">
                         Panel content

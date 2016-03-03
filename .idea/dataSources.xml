@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3430021206">
+  <component name="DataSourceManagerImpl" format="xml" hash="428831062">
     <data-source source="LOCAL" name="MySQL - grid_imo@localhost" uuid="8c713a8a-8576-4449-ba16-90d9c02b7605">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>

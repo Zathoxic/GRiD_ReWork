@@ -1,0 +1,3 @@
+Aanvraag verwijderen --> Projecten wordt aanvraag (Bezoekers kunnen hier CV opsturen voor openstaande projecten)
+
+*Admin moet project kunnen bewerken/verwijderen.

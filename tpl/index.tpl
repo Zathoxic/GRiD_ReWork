@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<<<<<<< HEAD
 <!-- INCLUDE BLOCK : header -->
 
-
-=======
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +11,9 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
->>>>>>> b928e7e97cfd5b4283580423ce11ba75f08f4b7b
 
 <body>
 
-    <script type="text/javascript" src="libs/jquery.slimscroll.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <div class="container">
         <div class="row">
@@ -30,7 +24,7 @@
             </div>
             <div class="col-sm-4">
                 <h1>News</h1>
-                </div>
+            </div>
 
 
             <div class="col-sm-4 news_container">
@@ -38,13 +32,13 @@
 
 
 
-                    <!-- START BLOCK : News -->
-                    <div id='news_object'>
+                <!-- START BLOCK : News -->
+                <div id='news_object'>
 
-                        <h3>{news_title}</h3>
-                        <p>{news_content}</p>
-                    </div>
-                    <!-- END BLOCK : News -->
+                    <h3>{news_title}</h3>
+                    <p>{news_content}</p>
+                </div>
+                <!-- END BLOCK : News -->
 
 
             </div>

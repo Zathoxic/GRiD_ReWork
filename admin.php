@@ -1,9 +1,10 @@
 <?php
  session_start();
+include("inc/header.php");
  include_once( "inc/class.TemplatePower.inc.php" );
  $tpl = new TemplatePower( "tpl/admin.tpl" );
  $tpl->prepare();
- $tpl->printToScreen();
+
  $servername = "localhost";
  $username = "root";
  $password = "";
@@ -33,5 +34,5 @@
  echo "Wrong Username or Password";
  }
  }
-
+$tpl->printToScreen();
  ?>
